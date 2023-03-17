@@ -34,6 +34,7 @@ public class SetNameServlet extends HttpServlet {
 		response.setContentType("text/html; charset=utf-8");
 		PrintWriter out = response.getWriter();
 		out.println("<h1>이름저장</h1>");
+		out.println("<h3>세션아이디:"+session.getId() + "</h3>");
 	}
 
 }
